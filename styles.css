@@ -186,10 +186,36 @@ h2 {
 	height: 62%;
 }
 
+/* Video prod */
+
+.video-prod {
+	width: 70%;
+	margin: 50px auto 50px auto;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 1px 1px 10px #66686a;
+	padding: 50px;
+}
+
+.video-prod h2 {
+	align-self: flex-end;
+}
+
+.video-prod p {
+	text-align: center;
+	line-height: 2em;
+}
+
+.video-prod img {
+	width: 5%;
+}
+
 @media (max-width: 760px) {
 	.navbar {
 		flex-direction: column;
 		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.toggle-button {
