@@ -125,9 +125,9 @@ h2 {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: 2fr 1fr;
-
 	margin: 100px auto 50px auto;
 	box-shadow: 1px 1px 10px #66686a;
+	padding: 20px;
 }
 
 .fashion img {
@@ -151,6 +151,39 @@ h2 {
 
 .content-fashion p {
 	line-height: 2em;
+}
+
+/* Experimental section */
+
+.experimental-photos {
+	width: 50%;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.experimental-photos .content-experimental {
+	width: 90%;
+	align-self: flex-end;
+	line-height: 2em;
+}
+
+.exp-photos-grid img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.exp-photos-grid {
+	width: 70%;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+	gap: 10px;
+	margin: 50px auto 50px auto;
+}
+
+.exp5 {
+	height: 62%;
 }
 
 @media (max-width: 760px) {
@@ -212,5 +245,13 @@ h2 {
 
 	.content-fashion h2 {
 		font-size: 18px;
+	}
+
+	.experimental-photos {
+		text-align: center;
+	}
+
+	.experimental-photos p {
+		line-height: 1.5em;
 	}
 }
