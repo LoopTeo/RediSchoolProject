@@ -14,3 +14,21 @@ email.addEventListener("input", function (event) {
 		email.setCustomValidity("");
 	}
 });
+
+document.getElementById("submit").addEventListener("click", function () {
+	let confiMessage = document.getElementById("result");
+	let completeMessage = document.getElementById("complete");
+	let emailAddress = document.getElementById("email").value;
+	let subName = document.getElementById("name").value;
+	if (
+		emailAddress !== "" &&
+		subName !== "" &&
+		email.validity.typeMismatch == false
+	) {
+		confiMessage.classList.add("resultActive");
+		confiMessage.innerHTML = emailAddress + " was subscribed sucessfully";
+		completeMessage.innerHTML = "Thank you for completing the form";
+		document.getElementById("newsletter-form").reset();
+		return false;
+	}
+});
