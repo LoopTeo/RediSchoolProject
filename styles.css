@@ -431,6 +431,72 @@ h2 {
 	width: 100%;
 }
 
+/* contact page */
+
+.contact {
+	width: 70%;
+	text-align: center;
+	margin: 50px auto 50px auto;
+}
+
+.container img {
+	width: 100%;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 150px;
+}
+
+.container .card {
+	position: relative;
+	max-width: 300px;
+	height: 215px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 0 15px 0 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 1px 1px 10px #66686a;
+	transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+	height: 420px;
+}
+
+.container .card .imgCard {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	z-index: 1;
+	box-shadow: 1px 1px 10px #66686a;
+}
+.container .card .imgCard img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.container .card .content {
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 1px;
+	transition-delay: 0.3s;
+}
+
 /* footer */
 
 footer {
