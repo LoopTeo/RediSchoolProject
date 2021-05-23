@@ -285,6 +285,152 @@ h2 {
 	padding-top: 50px;
 }
 
+/* portofolio page */
+
+.sport-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(10px, 1fr));
+	grid-template-rows: repeat(2, minmax(10px, 1fr));
+	width: 70%;
+	margin: 50px auto 50px auto;
+	gap: 10px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 1px 1px 10px #66686a;
+}
+
+.sport-gallery img {
+	width: 100%;
+}
+#sport1 {
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	height: 100%;
+	object-fit: cover;
+}
+
+#sport2 {
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+	height: 100%;
+	object-fit: cover;
+}
+
+#sport3 {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+	height: 100%;
+	object-fit: cover;
+}
+
+#sport4 {
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+	height: 100%;
+	object-fit: cover;
+}
+
+.landscape-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(10px, 3fr));
+	grid-template-rows: repeat(2, minmax(10px, 1fr));
+	width: 70%;
+	margin: 50px auto 50px auto;
+	gap: 10px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 1px 1px 10px #66686a;
+}
+
+#scape1 {
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	height: 100%;
+	object-fit: cover;
+}
+
+#scape2 {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	height: 100%;
+	object-fit: cover;
+}
+
+#scape3 {
+	grid-column: 3 / 5;
+	grid-row: -3 / -2;
+}
+
+#scape4 {
+	grid-column: 2 / 4;
+	grid-row: 2 / 3;
+	height: 100%;
+	object-fit: cover;
+}
+#scape5 {
+	grid-column: 1 / 5;
+	grid-row: 3 / 4;
+}
+
+#scape6 {
+	height: 100%;
+	object-fit: cover;
+}
+
+.landscape-gallery img {
+	width: 100%;
+}
+
+.experimental-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(10px, 3fr));
+	grid-template-rows: repeat(2, minmax(10px, 1fr));
+	width: 70%;
+	margin: 50px auto 50px auto;
+	gap: 10px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 1px 1px 10px #66686a;
+}
+
+#Exp1 {
+	height: 100%;
+	object-fit: cover;
+}
+
+#Exp2 {
+	height: 100%;
+	object-fit: cover;
+}
+
+#Exp3 {
+	grid-column: 3 / 5;
+	grid-row: -3 / -2;
+	height: 100%;
+	object-fit: cover;
+}
+
+#Exp4 {
+	height: 100%;
+	object-fit: cover;
+}
+
+#Exp5 {
+	height: 100%;
+	object-fit: cover;
+}
+
+#Exp7 {
+	grid-column: 2 / 4;
+	grid-row: 2 / 3;
+	height: 100%;
+	object-fit: cover;
+}
+
+.experimental-gallery img {
+	width: 100%;
+}
+
 /* footer */
 
 footer {
@@ -294,10 +440,7 @@ footer {
 
 .social img {
 	width: 40px;
-}
-
-.social img {
-	padding: 5px;
+	margin: 5px;
 }
 
 .social {
@@ -346,6 +489,10 @@ form button {
 	padding: 5px 10px;
 	color: #fff;
 	margin-top: 5px;
+}
+
+form button:hover {
+	background-color: #229e4f;
 }
 
 @media (max-width: 760px) {
@@ -430,7 +577,7 @@ form button {
 	}
 
 	.video-prod img {
-		width: 25%;
+		width: 35%;
 	}
 
 	.land2 {
@@ -449,5 +596,23 @@ form button {
 
 	.newsletter {
 		padding-bottom: 80px;
+	}
+
+	.social {
+		border-right: none;
+		border-bottom: 2px solid #66686a;
+		margin-left: 0;
+	}
+
+	.flexP {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sport-gallery,
+	.landscape-gallery,
+	.experimental-gallery {
+		display: flex;
+		flex-direction: column;
 	}
 }

@@ -26,8 +26,8 @@ document.getElementById("submit").addEventListener("click", function () {
 		email.validity.typeMismatch == false
 	) {
 		confiMessage.classList.add("resultActive");
-		confiMessage.innerHTML = emailAddress + " was subscribed sucessfully";
-		completeMessage.innerHTML = "Thank you for completing the form";
+		confiMessage.innerText = subName + " was subscribed sucessfully";
+		completeMessage.innerText = "Thank you for completing the form";
 		document.getElementById("newsletter-form").reset();
 		return false;
 	}

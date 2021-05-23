@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="script.js"></script>
+		<title>SRPhotograpy | Contact</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="logo">
+					<img src="HomepagePhotos/logo_sr_photo.png" alt="logo" />
+				</div>
+				<a href="#" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+				<div class="pages">
+					<ul>
+						<li><a href="index.html">ABOUT ME</a></li>
+						<li><a href="portofolio.html">PORTOFOLIO</a></li>
+						<li><a href="#" id="active-link">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<footer class="grid-footer">
+			<div class="social">
+				<p>Follow me on...</p>
+				<div class="icons">
+					<a href="#"><img src="HomepagePhotos/facebook_logo.png" alt="" /></a>
+					<a href="#"><img src="HomepagePhotos/insta_logo.png" alt="" /></a>
+					<a href="#"><img src="HomepagePhotos/youtube_logo.png" alt="" /></a>
+				</div>
+				<p>© Made by Stefan Roman 2021</p>
+			</div>
+
+			<div class="newsletter">
+				<h3 id="result">Subscribe to newsletter</h3>
+				<p id="complete">Complete the form if you want to recive news</p>
+
+				<form id="newsletter-form" onsubmit="return false">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required />
+					<br />
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required />
+					<br />
+					<button id="submit" type="submit">Submit</button>
+				</form>
+			</div>
+		</footer>
+	</body>
+</html>
