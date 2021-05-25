@@ -262,7 +262,7 @@ h2 {
 	grid-template-rows: auto;
 	gap: 10px;
 	background-color: #000814;
-	padding: 10px;
+	padding: 20px;
 	box-shadow: 1px 1px 10px #66686a;
 }
 .land1 {
@@ -431,6 +431,33 @@ h2 {
 	width: 100%;
 }
 
+#lightbox {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+
+#lightbox.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lightbox img {
+	width: auto;
+	height: auto;
+	opacity: 1;
+	border: 2px solid #fff;
+}
+
+.lightbox {
+	cursor: pointer;
+}
+
 /* contact page */
 
 .contact {
@@ -445,8 +472,9 @@ h2 {
 
 .container {
 	position: relative;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: none;
 	margin-top: 150px;
 }
 
@@ -561,7 +589,7 @@ form button:hover {
 	background-color: #229e4f;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 	.navbar {
 		flex-direction: column;
 		align-items: flex-start;
@@ -643,7 +671,7 @@ form button:hover {
 	}
 
 	.video-prod img {
-		width: 35%;
+		width: 15vw;
 	}
 
 	.land2 {
@@ -680,5 +708,17 @@ form button:hover {
 	.experimental-gallery {
 		display: flex;
 		flex-direction: column;
+	}
+
+	#lightbox img {
+		width: 80vw;
+		height: auto;
+	}
+
+	.container {
+		grid-template-columns: repeat(1, auto);
+		grid-template-rows: repeat(3, auto);
+		gap: 80px;
+		justify-content: center;
 	}
 }
