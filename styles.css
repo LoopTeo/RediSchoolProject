@@ -525,6 +525,32 @@ h2 {
 	transition-delay: 0.3s;
 }
 
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 50px auto 50px auto;
+	box-shadow: 1px 1px 10px #66686a;
+	padding: 50px;
+}
+
+.contact-me div {
+	text-align: center;
+	margin-top: 100px;
+}
+
+#contact-form input,
+textarea {
+	background-color: #a5a7aa2c;
+	border: none;
+}
+
+#contact-form button {
+	width: 100px;
+	align-self: center;
+	margin-top: 50px;
+}
+
 /* footer */
 
 footer {
